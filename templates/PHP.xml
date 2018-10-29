@@ -1,0 +1,33 @@
+<templateSet group="PHP">
+  <template name="test" value="public function testShould$NAME$(): void&#10;{&#10;    // Set&#10;    $OBJECT$ = new $CLASS$();&#10;    $EXPECTED$ = true;&#10;    &#10;    // Expectations&#10;    $EXPECTATION$&#10;    &#10;    // Actions&#10;    $result = $OBJECT$-&gt;$METHOD$&#10;    &#10;    // Assertions&#10;    $this-&gt;assertSame($EXPECTED$, $result);&#10;}" description="Unit test structur" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPECTATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPECTED" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="/s" value="// Set" description="Unit test // Set" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="/e" value="// Expectations" description="Unit test // Expectations" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="/a" value="// Actions" description="Unit test // Actions" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="/as" value="// Assertions" description="Unit test // Assertions" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
